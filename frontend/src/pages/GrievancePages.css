@@ -1,0 +1,115 @@
+.grievance-page-content { display: grid; min-width: 0; gap: 23px; }
+.grievance-page-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.grievance-page-heading h2 { margin: 6px 0 7px; color: var(--color-navy); font-size: 25px; font-weight: 700; }
+.grievance-page-heading p { color: var(--color-text-muted); font-size: 13px; line-height: 1.55; }
+
+.grievance-form { padding: 26px; background: var(--color-white); border: 1px solid var(--color-border); border-radius: 8px; box-shadow: var(--shadow-panel); }
+.grievance-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 18px; }
+.grievance-field { display: grid; align-content: start; gap: 7px; }
+.grievance-field-wide { grid-column: 1 / -1; }
+.grievance-field label { color: var(--color-navy); font-size: 12px; font-weight: 650; }
+.grievance-field label span { color: var(--color-error); }
+.grievance-field input, .grievance-field select, .grievance-field textarea { width: 100%; min-height: 44px; padding: 10px 12px; color: var(--color-text); background: var(--color-white); border: 1px solid var(--color-border-strong); border-radius: 6px; font: inherit; font-size: 13px; }
+.grievance-field select { padding-right: 34px; }
+.grievance-field textarea { min-height: 140px; resize: vertical; line-height: 1.6; }
+.grievance-field input::placeholder, .grievance-field textarea::placeholder { color: var(--color-text-faint); }
+.grievance-field input:focus, .grievance-field select:focus, .grievance-field textarea:focus { border-color: var(--color-primary); outline: 0; box-shadow: 0 0 0 3px rgb(49 85 183 / 14%); }
+.grievance-field small { color: var(--color-text-faint); font-size: 10px; line-height: 1.45; }
+.grievance-form-error { padding: 11px 13px; color: var(--color-error); background: var(--color-error-soft); border: 1px solid #f2cccc; border-radius: 6px; font-size: 12px; line-height: 1.5; }
+.grievance-form-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px; padding-top: 19px; border-top: 1px solid var(--color-border); }
+.grievance-form-actions button:disabled { cursor: wait; opacity: 0.7; }
+
+.submission-success { display: grid; justify-items: center; gap: 12px; padding: 48px 28px; background: var(--color-white); border: 1px solid var(--color-border); border-radius: 9px; box-shadow: var(--shadow-panel); text-align: center; }
+.submission-success-icon { display: grid; width: 52px; height: 52px; margin-bottom: 6px; place-items: center; color: var(--color-success); background: #eaf6f0; border-radius: 50%; }
+.submission-success-icon svg { width: 25px; height: 25px; }
+.submission-success h2 { margin: 0; color: var(--color-navy); font-size: 23px; }
+.submission-success > p { color: var(--color-text-muted); font-size: 13px; }
+.success-case-id { display: grid; gap: 5px; margin-top: 7px; padding: 14px 22px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px; }
+.success-case-id span { color: var(--color-text-faint); font-size: 9px; font-weight: 750; }
+.success-case-id strong { color: var(--color-navy); font-size: 18px; }
+.submission-success-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 7px; }
+
+.grievance-empty-state { margin-top: 0; }
+.grievance-empty-state .button { margin-top: 15px; }
+.grievance-table-wrap { width: 100%; max-width: 100%; overflow: auto; background: var(--color-white); border: 1px solid var(--color-border); border-radius: 8px; }
+.grievance-table { width: 100%; border-collapse: collapse; text-align: left; }
+.grievance-table th { padding: 13px 14px; color: var(--color-text-faint); background: var(--color-surface); border-bottom: 1px solid var(--color-border); font-size: 9px; font-weight: 750; text-transform: uppercase; white-space: nowrap; }
+.grievance-table td { padding: 14px; color: var(--color-text-muted); border-bottom: 1px solid var(--color-border); font-size: 11px; vertical-align: middle; }
+.grievance-table tbody tr:last-child td { border-bottom: 0; }
+.grievance-table tbody tr:hover { background: #fbfcfe; }
+.case-table-link { display: grid; min-width: 150px; gap: 5px; color: inherit; text-decoration: none; }
+.case-table-link strong { color: var(--color-primary); font-size: 11px; }
+.case-table-link span { color: var(--color-navy); font-size: 12px; font-weight: 600; }
+.status-badge, .priority-badge { display: inline-flex; align-items: center; width: max-content; gap: 6px; padding: 5px 8px; border-radius: 5px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.status-badge::before { width: 6px; height: 6px; background: currentColor; border-radius: 50%; content: ''; }
+.status-submitted { color: var(--color-primary); background: var(--color-primary-soft); }
+.status-assigned, .status-in-progress { color: var(--color-warning-text); background: var(--color-warning-soft); }
+.status-resolved, .status-closed { color: var(--color-success); background: #eaf6f0; }
+.priority-low { color: var(--color-success); background: #eaf6f0; }
+.priority-medium { color: var(--color-warning-text); background: var(--color-warning-soft); }
+.priority-high { color: var(--color-error); background: var(--color-error-soft); }
+.case-view-link { display: inline-flex; align-items: center; gap: 5px; color: var(--color-primary); font-size: 10px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.case-view-link:hover { text-decoration: underline; }
+.case-view-link svg { width: 13px; height: 13px; }
+
+.case-details-page { gap: 19px; }
+.case-details-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; }
+.case-details-heading > div { display: grid; justify-items: start; gap: 7px; }
+.back-to-cases { margin-bottom: 6px; color: var(--color-primary); font-size: 11px; font-weight: 650; text-decoration: none; }
+.back-to-cases:hover { text-decoration: underline; }
+.case-details-heading h2 { margin: 0; color: var(--color-navy); font-size: 24px; line-height: 1.3; }
+.case-details-id { color: var(--color-text-muted); font-size: 11px; }
+.case-details-id span { padding: 0 4px; }
+.case-summary-panel, .case-timeline-section { padding: 23px; background: var(--color-white); border: 1px solid var(--color-border); border-radius: 8px; }
+.case-summary-header, .case-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.case-summary-header h3, .case-section-heading h2 { margin: 5px 0 0; color: var(--color-navy); font-size: 16px; }
+.case-details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 19px 22px; margin: 24px 0 0; padding-top: 20px; border-top: 1px solid var(--color-border); }
+.case-detail-field { display: grid; align-content: start; gap: 6px; }
+.case-detail-wide { grid-column: 1 / -1; }
+.case-detail-field dt { color: var(--color-text-faint); font-size: 9px; font-weight: 750; text-transform: uppercase; }
+.case-detail-field dd { margin: 0; color: var(--color-navy); font-size: 12px; font-weight: 600; line-height: 1.55; }
+.case-detail-field .case-description { color: var(--color-text); font-weight: 400; white-space: pre-wrap; }
+.timeline-count { color: var(--color-text-faint); font-size: 10px; }
+.case-timeline-list { display: grid; margin: 23px 0 0; padding: 0; list-style: none; }
+.case-timeline-event { position: relative; display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 13px; min-height: 68px; }
+.case-timeline-event:not(:last-child)::after { position: absolute; top: 16px; bottom: 0; left: 7px; width: 1px; background: var(--color-border-strong); content: ''; }
+.case-timeline-marker { position: relative; z-index: 1; display: grid; width: 16px; height: 16px; place-items: center; color: var(--color-white); background: var(--color-primary); border: 2px solid var(--color-white); border-radius: 50%; box-shadow: 0 0 0 1px var(--color-primary); }
+.case-timeline-marker.is-first { color: var(--color-white); background: var(--color-success); box-shadow: 0 0 0 1px var(--color-success); }
+.case-timeline-marker svg { width: 11px; height: 11px; stroke-width: 2.5; }
+.case-timeline-copy { display: grid; align-content: start; gap: 5px; padding-bottom: 17px; }
+.case-timeline-copy strong { color: var(--color-navy); font-size: 12px; font-weight: 650; }
+.case-timeline-copy time { color: var(--color-text-faint); font-size: 10px; }
+.timeline-empty-state { display: flex; align-items: center; gap: 10px; margin-top: 20px; padding: 17px; color: var(--color-text-muted); background: var(--color-surface); border-radius: 6px; font-size: 12px; }
+.timeline-empty-state svg { width: 17px; height: 17px; color: var(--color-text-faint); }
+.case-load-error { display: grid; justify-items: start; gap: 12px; padding: 24px; color: var(--color-error); background: var(--color-error-soft); border: 1px solid #f2cccc; border-radius: 8px; }
+.case-load-error h2 { margin: 0; color: var(--color-navy); font-size: 17px; }
+.case-load-error p { font-size: 12px; }
+
+@media (max-width: 760px) {
+  .grievance-page-heading { align-items: flex-start; flex-direction: column; }
+  .grievance-table, .grievance-table tbody { display: block; }
+  .grievance-table thead { display: none; }
+  .grievance-table tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; padding: 7px 12px; border-bottom: 1px solid var(--color-border); }
+  .grievance-table tbody tr:last-child { border-bottom: 0; }
+  .grievance-table td { display: grid; min-width: 0; gap: 5px; padding: 10px 3px; border: 0; overflow-wrap: anywhere; }
+  .grievance-table td::before { color: var(--color-text-faint); content: attr(data-label); font-size: 9px; font-weight: 750; text-transform: uppercase; }
+  .grievance-table td[data-label='Case'], .grievance-table td[data-label='Actions'] { grid-column: 1 / -1; }
+  .case-table-link { min-width: 0; }
+}
+
+@media (max-width: 560px) {
+  .grievance-form { padding: 18px; }
+  .grievance-form-grid { grid-template-columns: 1fr; gap: 16px; }
+  .grievance-field-wide { grid-column: auto; }
+  .grievance-form-actions { justify-content: stretch; }
+  .grievance-form-actions .button { flex: 1; }
+  .submission-success { padding: 35px 19px; }
+  .case-details-heading { align-items: flex-start; flex-direction: column; }
+  .case-summary-panel, .case-timeline-section { padding: 18px; }
+  .case-details-grid { grid-template-columns: 1fr 1fr; gap: 16px 12px; }
+  .case-detail-wide { grid-column: 1 / -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grievance-field input, .grievance-field select, .grievance-field textarea { transition: none; }
+}

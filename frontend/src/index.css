@@ -1,0 +1,57 @@
+:root {
+  font-family: 'Aptos', 'Segoe UI Variable', 'Segoe UI', sans-serif;
+  color: var(--color-text);
+  background: var(--color-white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-primary: #3155b7;
+  --color-primary-hover: #27479e;
+  --color-primary-dark: #1e326b;
+  --color-primary-soft: #edf1fb;
+  --color-primary-border: #c7d1eb;
+  --color-navy: #18263d;
+  --color-text: #283448;
+  --color-text-muted: #637084;
+  --color-text-faint: #7b8798;
+  --color-white: #ffffff;
+  --color-surface: #f6f8fb;
+  --color-surface-raised: #f8f9fc;
+  --color-border: #e4e8ef;
+  --color-border-strong: #d5dce7;
+  --color-border-muted: #aeb7c6;
+  --color-focus: #7c9bf0;
+  --color-success: #23845b;
+  --color-error: #b83d45;
+  --color-error-soft: #fff0f0;
+  --color-warning: #d28a19;
+  --color-warning-text: #8a570b;
+  --color-warning-soft: #fff5df;
+  --color-on-dark-muted: #d7def1;
+  --color-selection: #dce5fb;
+  --color-white-overlay: rgb(255 255 255 / 96%);
+  --shadow-button: 0 5px 12px rgb(37 67 164 / 15%);
+  --shadow-button-hover: 0 8px 18px rgb(37 67 164 / 20%);
+  --shadow-card: 0 20px 55px rgb(29 44 78 / 10%);
+  --shadow-float: 0 8px 24px rgb(29 44 78 / 9%);
+  --shadow-feature: 0 9px 24px rgb(29 44 78 / 7%);
+  --shadow-panel: 0 12px 34px rgb(29 44 78 / 5%);
+  --shadow-menu: 0 12px 20px rgb(29 44 78 / 7%);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { min-width: 320px; scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+p { margin: 0; }
+body, button, a { font-family: 'Aptos', 'Segoe UI Variable', 'Segoe UI', sans-serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; }
+::selection { color: var(--color-navy); background: var(--color-selection); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

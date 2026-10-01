@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+SQLAlchemy
+pwdlib[argon2]
+PyJWT
+email-validator
